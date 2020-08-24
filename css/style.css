@@ -37,6 +37,24 @@ body {
     background: rgba(0,0,0,0.5);
 }
 
+.divider
+{
+    position: relative;
+    margin-top: 90px;
+    height: 1px;
+}
+
+.div-transparent:before
+{
+    content: "";
+    position: absolute;
+    left: 1%;
+    right: 1%;
+    width: 95%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(80,80,80), transparent);
+}
+
 #overview {
     min-height: 100px;
     background-attachment: fixed;
@@ -68,6 +86,18 @@ body {
 }
 
 #main-footer {
-    background: #000;
+    background: #CCC;
     color: #FFF;
+}
+
+.exeter {
+    margin-bottom:-10%;
+    margin-top:5%;
+    height: 70%;
+}
+
+.liverpool {
+    margin-bottom:-10%;
+    margin-top:2%;
+    height: 70%;
 }
