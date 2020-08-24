@@ -45,10 +45,21 @@
                         <a href="#presenters" class="nav-link">Presenters</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#references" class="nav-link">Key References</a>
+                        <a href="#references" class="nav-link">References</a>
                     </li>
                     <li class="nav-item">
                         <a href="#contact" class="nav-link">CONTACT</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                    	<img src="./img/exeter.jpg" width="40%" height="60%" class="d-inline-block align-top" alt="">
+                    </li>
+                    <li class="nav-item">
+                    	<img src="./img/liverpool.png" width="40%" height="60%" class="d-inline-block align-top" alt="">
+                    </li>
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link" style="color: white;">ICDM2020</a>
                     </li>
                 </ul>
                 </div>
@@ -61,8 +72,10 @@
           <div class="carousel-inner pt-3">
               <div class="carousel-item carousel-image-1 active">
                 <div class="carousel-caption d-block">
-                    <h1>Trust Deep Learning</h1>
-                    <p style="text-align: justify;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit error magni corrupti asperiores ex voluptates sapiente veniam exercitationem quo doloremque repudiandae, pariatur eius vel suscipit consequatur a, voluptas perspiciatis aliquam?</p>
+                    <h1>ICDM 2020 Tutorial</h1>
+                    <h4 style="text-align: center;">Adversarial Robustness of Deep Learning: Theory, Algorithms, and Applications</h4>
+                    <br />
+                    <h4 style="text-align: center;">Tutorial in 20th IEEE International Conference on Data Mining (ICDM 2020) November 17-20, 2020, Sorrento, Italy</h4>
                   </div>
                   <div class="container">
                     <div class="cover-overlay">
@@ -75,72 +88,183 @@
     </section>
 
     <section id="overview" class="mt-5">
-    	<div class="container">
-	        <div class="row px-5">
-	            <div class="col">
-	                <h3 class="mx-auto" style="text-align: center;">ADVERSARIAL MACHINE LEARNING TUTORIAL</h3>
-	                <h4>Overview</h4>
-	                <br />
-	                <h5>Abstract</h5>
-	                <p style="text-align: justify;">This tutorial aims to introduce the fundamentals of adversarial robustness ofdeep learning, presenting a well-structured review of up-to-date techniques toassess the vulnerability of various types of deep learning models to adversarialexamples.  This tutorial will particularly highlight state-of-the-art techniques inadversarial attacks and robustness verification of deep neural networks (DNNs).We will also introduce some effective countermeasures to improve robustness ofdeep learning models, with a particular focus on generalisable adversarial train-ing.   We  aim  to  provide  a  comprehensive  overall  picture  about  this  emergingdirection and enable the community to be aware of the urgency and importanceof designing robust deep learning models in safety-critical data analytical ap-plications, ultimately enabling the end-users to trust deep learning classifiers.We will also summarize potential research directions concerning the adversarialrobustness of deep learning, and its potential benefits to enable accountable andtrustworthy deep learning-based data analytical systems and applications.</p>
-	                <h5>Content</h5>
-	                <p style="text-align: justify;">
-	                	The content of the tutorial is planned as below:
-	                </p>
-	                <ul>
-	                	<li>
-	                		Introduction to adversarial robustness: this part will introduce the concept of adversarial robustness by showing some examples from computer vision, natural language processing, and malware detection, autonomous systems. Specifically, we will demonstrate the vulnerabilities of various types of deep learning models to different adversarial examples. We will also highlight the dissimilarities of research focuses on adversarial robustness from different communities, i.e., attack, defense and verification.
-	                	</li>
-	                	<li>
-	                		Adversarial attacks: this part will detail some famous adversarial attack methods with an aim to provide some insights of why adversarial examples exit and how to generate adversarial perturbation effectively and efficiently. Specifically, we will present five well-established works, including FGSM [7], C&W [1], DeepFool [15], JMSA [16], ZeroAttack [20]. In the end of this part, we will also briefly touch some novel adversarial examples emerged recently, including universal adversarial examples [14], spatial-transformed attacks [24], adversarial patches [19], etc
-	                	</li>
-	                	<li>
-	                		Verification: this part will review the state-of-the-art on the formal verification techniques for checking whether a deep learning model is robust. Techniques to be discussed including constraint solving based techniques (MILP, Reluplex [10]), approximation techniques (MaxSens [23], AI2 [5], DeepSymbol), and global optimisation based techniques (DLV [9], DeepGO [17], DeepGame [22]).
-	                	</li>
-	                	<li>
-	                		Adversarial defense: this part will present an overview of state-of-the-art robust optimisation techniques for adversarial defense, with emphasis on generalisable adversarial training and regularisation methods. In particular, adversarial training with Fast Gradient Method (FGM) [11], Projected Gradient Method (PGM) [12], Wasserstein Risk Minimization (WRM) [2] will be analysed with respect to generalisation guarantees, and regularisation techniques such as spectral normalisation [13] and Lipschitz regularisation [21] to promote training stability and robustness against adversarial examples will be also discussed.
-	                	</li>
-	                </ul>
-	            </div>
-	        </div>
-    	</div>
-    </section>
-
-    <section id="program">
-        <!-- <div class="card bg-danger">
-        </div> -->
-    </section>
-
-    <section id="presenters">
-        <!-- <div class="card bg-danger">
-        </div> -->
-    </section>
-
-    <section id="references">
-        <!-- <div class="card bg-danger">
-        </div> -->
-    </section>
-
-    <section id="contact" class="mt-3">
         <div class="container">
-            <div class="rw">
-                <h3 class="mx-auto mt-3">Contact</h3>
+            <div class="row px-5">
+                <div class="col">
+                    <h3 class="mx-auto" style="text-align: center;">ADVERSARIAL MACHINE LEARNING TUTORIAL</h3>
+                    <h4>Overview</h4>
+                    <br />
+                    <h5>Abstract</h5>
+                    <p style="text-align: justify;">This tutorial aims to introduce the fundamentals of adversarial robustness ofdeep learning, presenting a well-structured review of up-to-date techniques toassess the vulnerability of various types of deep learning models to adversarialexamples.  This tutorial will particularly highlight state-of-the-art techniques inadversarial attacks and robustness verification of deep neural networks (DNNs).We will also introduce some effective countermeasures to improve robustness ofdeep learning models, with a particular focus on generalisable adversarial train-ing.   We  aim  to  provide  a  comprehensive  overall  picture  about  this  emergingdirection and enable the community to be aware of the urgency and importanceof designing robust deep learning models in safety-critical data analytical ap-plications, ultimately enabling the end-users to trust deep learning classifiers.We will also summarize potential research directions concerning the adversarialrobustness of deep learning, and its potential benefits to enable accountable andtrustworthy deep learning-based data analytical systems and applications.</p>
+                    <h5>Content</h5>
+                    <p style="text-align: justify;">
+                        The content of the tutorial is planned as below:
+                    </p>
+                    <ul>
+                        <li>
+                            Introduction to adversarial robustness: this part will introduce the concept of adversarial robustness by showing some examples from computer vision, natural language processing, and malware detection, autonomous systems. Specifically, we will demonstrate the vulnerabilities of various types of deep learning models to different adversarial examples. We will also highlight the dissimilarities of research focuses on adversarial robustness from different communities, i.e., attack, defense and verification.
+                        </li>
+                        <li>
+                            Adversarial attacks: this part will detail some famous adversarial attack methods with an aim to provide some insights of why adversarial examples exit and how to generate adversarial perturbation effectively and efficiently. Specifically, we will present five well-established works, including FGSM [7], C&W [1], DeepFool [15], JMSA [16], ZeroAttack [20]. In the end of this part, we will also briefly touch some novel adversarial examples emerged recently, including universal adversarial examples [14], spatial-transformed attacks [24], adversarial patches [19], etc
+                        </li>
+                        <li>
+                            Verification: this part will review the state-of-the-art on the formal verification techniques for checking whether a deep learning model is robust. Techniques to be discussed including constraint solving based techniques (MILP, Reluplex [10]), approximation techniques (MaxSens [23], AI2 [5], DeepSymbol), and global optimisation based techniques (DLV [9], DeepGO [17], DeepGame [22]).
+                        </li>
+                        <li>
+                            Adversarial defense: this part will present an overview of state-of-the-art robust optimisation techniques for adversarial defense, with emphasis on generalisable adversarial training and regularisation methods. In particular, adversarial training with Fast Gradient Method (FGM) [11], Projected Gradient Method (PGM) [12], Wasserstein Risk Minimization (WRM) [2] will be analysed with respect to generalisation guarantees, and regularisation techniques such as spectral normalisation [13] and Lipschitz regularisation [21] to promote training stability and robustness against adversarial examples will be also discussed.
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="row mt-3">
+        </div>
+    </section>
+
+    <section id="program" class="mt-3">
+        <div class="container">
+            <div class="row px-5">
+                <div class="col">
+                    <h3> Program </h3>
+                    <p>Detailed program and slides will be available soon.</p>
+                </div>
+        </div>
+    </section>
+
+    <section id="presenters" class="mt-3">
+        <div class="container" style="text-align: justify;">
+            <div class="row px-5">
+            	<div class="col">
+                	<h3>Presenters</h3>
+                </div>
+            </div>
+            <div class="row mt-3 px-5">
               <div class="col-md">
-                <img src="img/wenjie.jpg" class="rounded-circle" alt="Responsive image">
-                <p class="mx-auto mt-3">Wenjie Ruan</p>
+                <img src="img/wenjie.jpg" class="rounded-circle">
+                <p class="mx-auto mt-3 name">Wenjie Ruan</p>
               </div>
               <div class="col-md">
-                <img src="img/xiaowei.jpg" class="rounded-circle" alt="Responsive image">
-                <p class="mx-auto mt-3">Xiaowei Huang</p>
+              	<p>
+              		Dr Wenjie Ruan is a Senior Lecturer of Data Science at University of Exeter, UK. Previously, he has worked at Lancaster University as a lecturer, and University of Oxford as a postdoctoral researcher. Dr Ruan got his PhD from University of Adelaide, Australia. His research interests lie on i) adversarial robustness of deep neural networks; and ii) explainable AI and its applications in health data analytics and human-centred computing. His research is funded by the ORCA partnership Fund –AELARS. 
+              	</p>
+              	<p>
+              		His homepage is: <a href="http://wenjieruan.com/">http://wenjieruan.com/</a>
+              	</p>
+              </div>
+            </div>
+            <div class="row mt-3 px-5">
+              <div class="col-md">
+                <img src="img/xiaowei.jpg" class="rounded-circle">
+                <p class="mx-auto mt-3 name">Xiaowei Huang</p>
               </div>
               <div class="col-md">
-                <img src="img/xinping.jpg" class="rounded-circle" alt="Responsive image">
-                <p class="mx-auto mt-3">Xinping Yi</p>
+              	<p>
+              		Dr Xinping Yi is a Lecturer at the Department of Electrical Engineering and Electronics of the University of Liverpool, United Kingdom. He received his Ph.D. degree in Electronics and Communications (2015) from Telecom ParisTech, Paris, France. Prior to Liverpool, he was a research associate at Technische Universitat Berlin, Berlin, Germany (2014-2017), a research assistant at EURECOM, Sophia Antipolis, France (2011-2014), and a research engineer at Huawei Technologies, Shenzhen, China (2009- 2011). His main research interests include information theory, graph theory, optimization and machine learning, as well as their applications in wireless communications and artificial intelligence. 
+              	</p>
+              	<p>
+              		His homepage is: <a href="https://sites.google.com/site/xinpingyi00/">https://sites.google.com/site/xinpingyi00/ </a>
+              	</p>
+              </div>
+            </div>
+            <div class="row mt-3 px-5">
+              <div class="col-md">
+                <img src="img/xinping.jpg" class="rounded-circle">
+                <p class="mx-auto mt-3 name">Xinping Yi</p>
+              </div>
+              <div class="col-md">
+              	<p>
+              		Dr Xiaowei Huang is Reader of Computer Science at the University of Liverpool, UK. Prior to Liverpool, he worked at Oxford and UNSW Sydney. Dr Huang’s research concerns the safety and trustworthiness of autonomous intelligent systems. He is now leading a research group working on the verification, validation, and interpretability of deep neural networks. Dr Huang is the principle investigator of several Dstl projects concerning the safety and assurance of artificial intelligence, and the Liverpool lead on a H2020 project on the foundation of trustworthy autonomy and an EPSRC project on the security of neural symbolic architectures. He is also a co-investigator of the UK EPSRC RAI hub on Offshore Robotics for Certification of Assets (ORCA). 
+              	</p>
+              	<p>
+              		His homepage is: <a href="https://cgi.csc.liv.ac.uk/~xiaowei/">https://cgi.csc.liv.ac.uk/~xiaowei/</a>
+              	</p>
               </div>
             </div>
           </div>
+    </section>
+
+    <section id="references">
+        <div class="container">
+            <div class="row px-5">
+                <div class="col" style="text-align: justify;">
+                    <h3 class="mx-auto mt-3 mb-3">Key References</h3>
+                    <ul style="list-style-type: none; margin-left: -40px">
+                        <li>
+                            [1] Ian J. Goodfellow, Jonathon Shlens, Christian Szegedy: Explaining and Harnessing Adversarial Examples. ICLR 2015
+                        </li>
+                        <li>
+                            [2] Carlini, Nicholas, and David Wagner. Towards evaluating the robustness of neural networks. 2017 IEEE Symposium on Security and Privacy (S&P), 2017.
+                        </li>
+                        <li>
+                            [3] Moosavi-Dezfooli, Seyed-Mohsen, Alhussein Fawzi, and Pascal Frossard. Deepfool: a simple and accurate method to fool deep neural networks. IEEE conference on computer vision and pattern recognition (CVPR), 2016.
+
+                        </li>
+                        <li>
+                            [4] Papernot, Nicolas, et al. The limitations of deep learning in adversarial settings. 2016 IEEE European symposium on security and privacy (EuroS&P). 2016.
+                        </li>
+                        <li>
+                            [5] Ilyas, Andrew, et al. Black-box Adversarial Attacks with Limited Queries and Information. International Conference on Machine Learning (ICML). 2018.
+                        </li>
+                        <li>
+                            [6] Wang, Qinglong, et al. "Adversary resistant deep neural networks with an application to malware detection." Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD). 2017.
+                        </li>
+                        <li>
+                            [7] Xiao, Chaowei, Jun-Yan Zhu, Bo Li, Warren He, Mingyan Liu, and Dawn Song. "Spatially Transformed Adversarial Examples." In International Conference on Learning Representations (ICLR) 2018.
+                        </li>
+                        <li>
+                            [8] Guy Katz, Clark W. Barrett, David L. Dill, Kyle Julian, and Mykel J. Kochenderfer. Reluplex: An Efficient SMT Solver for Verifying Deep Neural Networks. CAV 2017.
+                        </li>
+                        <li>
+                            [9] Xiang, W., Tran, H. D., Johnson, T. T. Output reachable set estimation and verification for multilayer neural networks. IEEE transactions on neural networks and learning systems, 29(11), 5777-5783. 2018
+                        </li>
+                        <li>
+                            [10] Timon Gehr, Matthew Mirman, Dana Drachsler-Cohen, Petar Tsankov, Swarat Chaudhuri, Martin Vechev. AI2: Safety and Robustness Certification of Neural Networks with Abstract Interpretation. 2018 IEEE Symposium on Security and Privacy (S&P)
+                        </li>
+                        <li>
+                            [11] Xiaowei Huang, Marta Kwiatkowska, Sen Wang, Min Wu. Safety Verification of Deep Neural Networks. CAV 2017.
+                        </li>
+                        <li>
+                            [12] Wenjie Ruan, Xiaowei Huang, Marta Kwiatkowska. Reachability Analysis of Deep Neural Networks with Provable Guarantees. IJCAI 2018
+                        </li>
+                        <li>
+                            [13] Min Wu, Matthew Wicker, Wenjie Ruan, Xiaowei Huang, Marta Kwiatkowska. A Game-Based Approximate Verification of Deep Neural Networks with Provable Guarantees. Theoretical Computer Science, vol. 807, pp. 298-329, 2020.
+                        </li>
+                        <li>
+                            [14] Alexey Kurakin, Ian Goodfellow, and Samy Bengio. Adversarial machine learning at scale. ICLR 2017.
+                        </li>
+                        <li>
+                            [15] Aleksander Madry, Aleksandar Makelov, Ludwig Schmidt, Dimitris Tsipras, and Adrian Vladu. Towards deep learning models resistant to adversarial attacks. ICLR 2018.
+                        </li>
+                        <li>
+                            [16] Aman Sinha, Hongseok Namkoong, and John Duchi. Certifiable distributional robustness with principled adversarial training. ICLR 2018.
+                        </li>
+                        <li>
+                            [17] Farzan Farnia, Jesse Zhang, and David Tse. Generalizable adversarial training via spectral normalization. ICLR 2019.
+                        </li>
+                        <li>
+                            [18] Moustapha Cisse, Piotr Bojanowski, Edouard Grave, Yann Dauphin, andNicolas Usunier. Parseval networks: Improving robustness to adversarialexamples. ICML 2017.
+                        </li>
+                        <li>
+                            [19] Xinping Yi. Asymptotic singular value distribution of linear convolutional layers. arXiv:2006.07117, 2020.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row px-5 mt-3 mb-3">
+                <div class="col">
+                    <h3 class="mb-4">Contact</h3>
+                    <p>Web Builder and Tutorial Assistant:</p>
+                    <p>Han Wu</p>
+                    <p>Email: han.wu@lancaster.ac.uk</p>
+                    <p>Department of Computer Science</p>
+                    <p>University of Exeter, UK</p>
+                </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer -->

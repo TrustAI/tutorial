@@ -13,7 +13,7 @@ body {
     padding-right: 1rem !important;
 }
 
-.navbar .nav-item.active{
+.navbar .nav-item.active {
     border-left: #888 3px solid;
 }
 
@@ -48,16 +48,23 @@ body {
     color:#FFF;
 }
 
-#contact {
-    font-size: 22px;
-    font-weight: 300;
+#presenters {
+    font-weight: 400;
     text-align: center;
     color:#000;
-    background-color:#EEE;
 }
 
-#contact img{
+#presenters img {
+    margin-left: 25%;
     width: 50%;
+}
+
+#presenters .name {
+    text-align: center;
+}
+
+#contact p {
+    line-height: 0.6;
 }
 
 #main-footer {
