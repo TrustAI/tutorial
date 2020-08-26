@@ -5,12 +5,17 @@ div {
 body {
     overflow-x: hidden;
 }
- 
+
 .navbar .nav-link {
     font-size: 20px;
+    background-color: #000;
     text-transform: uppercase;
     padding-left: 1rem !important;
     padding-right: 1rem !important;
+}
+
+.bg-dark {
+  background-color: #000!important;
 }
 
 .navbar .nav-item.active {
@@ -34,7 +39,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.5);
+    background: rgba(20,40,80,0.2);
 }
 
 .divider
@@ -51,8 +56,8 @@ body {
     left: 1%;
     right: 1%;
     width: 95%;
-    height: 1px;
-    background-image: linear-gradient(to right, transparent, rgb(80,80,80), transparent);
+    height: 3px;
+    background-image: linear-gradient(to right, transparent, rgb(100,0,80), transparent);
 }
 
 #overview {
@@ -67,14 +72,14 @@ body {
 }
 
 #presenters {
-    font-weight: 400;
+    font-weight: 600;
     text-align: center;
     color:#000;
 }
 
 #presenters img {
-    margin-left: 25%;
-    width: 60%;
+    margin-left: 15%;
+    width: 65%;
 }
 
 #presenters .name {
@@ -86,7 +91,7 @@ body {
 }
 
 #main-footer {
-    background: #CCC;
+    background: #000;
     color: #FFF;
 }
 
@@ -98,6 +103,6 @@ body {
 
 .liverpool {
     margin-bottom:-10%;
-    margin-top:2%;
-    height: 70%;
+    margin-top:5%;
+    height: 75%;
 }
